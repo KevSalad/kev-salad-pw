@@ -1,0 +1,62 @@
+.about {
+    background-color: rgb(235, 235, 235);
+}
+
+.about_container {
+    align-items: center;
+}
+
+.about_info {
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about_box {
+    background-color: var(--container-color);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about_title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.about_sub {
+    font-size: var(--medium-font-size);
+}
+
+.about_description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    max-width: 20%; /* or set a specific value for the maximum width */
+    margin: 0 auto; /* this centers the container horizontally */
+}
+  
+  
+/* Large Devices */
+@media screen and (max-width: 992px) {
+    .about_box {
+        padding: 0.75rem 0.5rem;
+    }
+  }
+  
+  /* Medium Devices */
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+    
+  }
+  
+  /* Small Devices */
+  @media screen and (max-width: 350px) {
+  }

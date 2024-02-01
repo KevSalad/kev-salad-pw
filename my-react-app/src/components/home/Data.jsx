@@ -9,7 +9,7 @@ const Data = () => {
 
             <h3 className="home_sub"> Software Developer </h3>
             <p className="home_description"> 
-                I'm a software developer with a passion for learning and problem-solving. I'm always looking for new challenges and opportunities to grow.
+            I'm a software enginneer and freelancer based in Houston, TX with a passion for learning and problem-solving. I'm always looking for new challenges and opportunities to grow.
             </p>
 
             <a href="#contact" className="button button-flex"> Contact Me <i className="uil uil-navigator button_icon"></i> </a>
