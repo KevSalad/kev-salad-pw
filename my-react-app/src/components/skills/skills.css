@@ -1,0 +1,124 @@
+.skills_container {
+    grid-template-columns: repeat(3, 350px);
+    /* grid-template-columns: repeat(2, 350px);
+    column-gap: 3rem; */
+    justify-content: center;
+}
+
+.skills_content {
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skills-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5)
+}
+
+.skills_box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills_group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem; 
+}
+
+.skills_data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+/* -------- LOGO COLORS ------------ */
+.skills_data .uil-html5 {
+    font-size: 1.25rem;
+    color: orange;
+}
+.skills_data .uil-css3-simple {
+    font-size: 1.25rem;
+    color: rgb(24, 127, 195);
+}
+.skills_data .uil-java-script {
+    font-size: 1.25rem;
+    color: green;
+}
+.skills_data .uil-react {
+    font-size: 1.25rem;
+    color: rgb(9, 105, 201);
+}
+.skills_data .uil-github {
+    font-size: 1.25rem;
+    color: black;
+}
+.skills_data .uil-database-alt {
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    /* color: rgb(160, 108, 215); */
+}
+.skills_data .uil-database {
+    font-size: 1.25rem;
+    /* color: rgb(160, 108, 215); */
+    color: rgb(0, 0, 0);
+}
+/* .skills_data .uil-question-circle {
+    font-size: 1.25rem;
+    color: black;
+} */
+.skills_data .bx-badge-check{
+    font-size: 1.25rem;
+    color: black;
+}
+
+/* -------- END LOGO COLORS ------------ */
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skills_number {
+    font-size: var(--tiny-font-size);
+}
+
+/* MOBILE DEVICES */
+
+/* Large Devices */
+@media screen and (max-width: 992px) {
+    .skills_container {
+        /* Allows the grid containers to go below one another */
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+    .skills_content {
+        padding: 2rem 2rem;
+    }
+  }
+  
+  /* Medium Devices */
+  @media screen and (max-width: 576px) {
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+    .skills_content {
+        padding: 1.5rem;
+    }
+  }
+  
+  /* Small Devices */
+  @media screen and (max-width: 350px) {
+    .skills_box {
+        column-gap: 1.25rem;
+    }
+    .skills_name {
+        font-size: var(--small-font-size);
+    }
+  }

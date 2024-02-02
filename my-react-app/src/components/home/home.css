@@ -84,6 +84,8 @@
 .home_description {
     margin-bottom: var(--mb-2);
     max-width: 375px;
+    font-style: italic;
+    opacity: 0.8;
 }
 
 .home_container {

@@ -17,6 +17,10 @@
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+
+    max-width: 40%; /* or set a specific value for the maximum width */
+    margin: 0 auto; /* this centers the container horizontally */
 }
 
 .about_title {
