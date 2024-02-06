@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/kev-salad-pw/static/css/main.dee8903a.css",
+    "main.js": "/kev-salad-pw/static/js/main.15a5a46d.js",
+    "static/media/MRI.png": "/kev-salad-pw/static/media/MRI.f4c316d391335bdfb3bc.png",
+    "static/media/KSAResume.pdf": "/kev-salad-pw/static/media/KSAResume.11a2b4aaf5ceae6dd5d7.pdf",
+    "static/media/Create Account Page.png": "/kev-salad-pw/static/media/Create Account Page.fd29a3046688c1edcc17.png",
+    "static/media/Sign In Page.png": "/kev-salad-pw/static/media/Sign In Page.77e406286abc426827d1.png",
+    "static/media/salad.svg": "/kev-salad-pw/static/media/salad.716c3082c75dd2bf4886.svg",
+    "index.html": "/kev-salad-pw/index.html",
+    "main.dee8903a.css.map": "/kev-salad-pw/static/css/main.dee8903a.css.map",
+    "main.15a5a46d.js.map": "/kev-salad-pw/static/js/main.15a5a46d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dee8903a.css",
+    "static/js/main.15a5a46d.js"
+  ]
+}
