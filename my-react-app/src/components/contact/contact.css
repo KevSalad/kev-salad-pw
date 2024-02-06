@@ -37,6 +37,10 @@
     height: 4rem;
 }
 
+.message_div {
+    margin-top: var(--mb-2);
+}
+
 .contact_title {
     font-size: var(--h3-font-size);
     color: var(--title-color);
@@ -81,4 +85,3 @@
 .contact_form-area textarea {
     resize: none;
 }
-

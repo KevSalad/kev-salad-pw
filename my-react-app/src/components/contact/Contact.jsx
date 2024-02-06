@@ -12,8 +12,8 @@ const Contact = () => {
     const { serviceId, templateId, publicKey } = config.emailjs;
 
     emailjs
-      .sendForm('serviceId', 'templateId', form.current, {
-        publicKey: 'publicKey',
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
@@ -23,6 +23,8 @@ const Contact = () => {
           console.log('FAILED...', error.text);
         },
       );
+
+      form.current.reset();
   };
     return (
         <section className="contact section" id="contact"> 
@@ -30,6 +32,7 @@ const Contact = () => {
             <span className="section__subtitle"> Get in touch </span>
 
             <div className="contact__container container grid">
+                <h3 className="contact_title"> Contact Info </h3>
                 <div className="contact_information">
 
                     <i className="uil uil-envelope contact__icon"></i>
@@ -48,7 +51,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='message_div'>
                     <h3 className="contact_title"> Message Me </h3>
                     <form ref={form} onSubmit={sendEmail} className="contact_form">
                         <div className="contact_form-div">
