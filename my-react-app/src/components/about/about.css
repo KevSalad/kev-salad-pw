@@ -40,6 +40,7 @@
 .about-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 20%; /* or set a specific value for the maximum width */
     margin: 0 auto; /* this centers the container horizontally */
 }
