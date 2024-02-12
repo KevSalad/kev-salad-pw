@@ -13,7 +13,7 @@ const Frontend = () => {
                     
                     <div>
                         <h3 className="skills_name"> HTML </h3>
-                        <span className="skills_number"> 90% </span>
+                        {/* <span className="skills_number">  </span> */}
                     </div>
                     </div>
 
@@ -21,7 +21,7 @@ const Frontend = () => {
                         <i class="uil uil-css3-simple"></i>
                     <div>
                         <h3 className="skills_name"> CSS </h3>
-                        <span className="skills_number"> 90% </span>
+                        {/* <span className="skills_number"> 90% </span> */}
                     </div>
                     </div>
 
@@ -29,7 +29,7 @@ const Frontend = () => {
                         <i class="uil uil-java-script"></i>
                     <div>
                         <h3 className="skills_name"> Javascript </h3>
-                        <span className="skills_number"> 90% </span>
+                        {/* <span className="skills_number"> 90% </span> */}
                     </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const Frontend = () => {
                         <i class="uil uil-react"></i>
                     <div>
                         <h3 className="skills_name"> React </h3>
-                        <span className="skills_number"> 90% </span>
+                        {/* <span className="skills_number"> 90% </span> */}
                     </div>
                     </div>
 
@@ -48,7 +48,7 @@ const Frontend = () => {
                         <i class="uil uil-github"></i>
                     <div>
                         <h3 className="skills_name"> Git </h3>
-                        <span className="skills_number"> 90% </span>
+                        {/* <span className="skills_number"> 90% </span> */}
                     </div>
                     </div>
 

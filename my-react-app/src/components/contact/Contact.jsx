@@ -9,6 +9,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // To prevent spamming of button
+    document.getElementById("submitButton").disabled = true;
+
+    setTimeout(function() {
+      document.getElementById("submitButton").disabled = false;
+    }, 20000); 
+
     const { serviceId, templateId, publicKey } = config.emailjs;
 
     emailjs
@@ -24,15 +31,19 @@ const Contact = () => {
         },
       );
 
-      form.current.reset();
-  };
+    form.current.reset();
+};
+
     return (
         <section className="contact section" id="contact"> 
             <h2 className="section__title">Contact</h2>
             <span className="section__subtitle"> Get in touch </span>
 
             <div className="contact__container container grid">
-                <h3 className="contact_title"> Contact Info </h3>
+
+                {/* CONTACT INFO REMOVED FOR PRIVACY */}
+
+                {/* <h3 className="contact_title"> Contact Info </h3>
                 <div className="contact_information">
 
                     <i className="uil uil-envelope contact__icon"></i>
@@ -49,7 +60,9 @@ const Contact = () => {
                         <h3 className="contact__title">Phone</h3>
                         <span className="contact__subtitle"> 832-878-5817 </span>
                     </div>
-                </div>
+                </div> */}
+
+                
 
                 <div className='message_div'>
                     <h3 className="contact_title"> Message Me </h3>
@@ -61,6 +74,7 @@ const Contact = () => {
                                 name="name" 
                                 className="contact_form-input" 
                                 placeholder="Insert Name"
+                                required
                             />
                         </div>
                         <div className="contact_form-div">
@@ -70,6 +84,7 @@ const Contact = () => {
                                 name="email" 
                                 className="contact_form-input" 
                                 placeholder="Insert Email"
+                                required
                             />
                         </div>
                         <div className="contact_form-div contact_form-area">
@@ -80,9 +95,10 @@ const Contact = () => {
                                 rows="10"
                                 className="contact_form-input" 
                                 placeholder="Write your message"
+                                required
                             />
                         </div>
-                        <button className="button button-flex"> Send Message <i className="uil uil-navigator button_icon"></i> </button>
+                        <button id="submitButton" className="button button-flex"> Send Message <i className="uil uil-navigator button_icon"></i> </button>
 
                     </form>
                 </div>
